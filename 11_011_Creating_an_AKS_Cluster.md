@@ -304,6 +304,12 @@ This step is important and **mandatory** as it will ensure that what you create 
   #STUDENT=$(az ad signed-in-user show --query displayName | sed -e 's/^"//' -e 's/"$//' | tr -d ' ')
   echo $STUDENT > ~/student.txt
   cat ~/student.txt
+  
+  
+  # 그냥 STUDENT에 saskor 변수 입력
+  STUDENT=saskor
+  echo $STUDENT > ~/student.txt
+  cat ~/student.txt
   ```
 
 * Save the STUDENT info for next time we re-login
